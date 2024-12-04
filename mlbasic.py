@@ -39,19 +39,24 @@ X = df
 y = pd.Series(data.target,name='Species')
 print(y)
 
+
+#spliting the data into 2 parts the training one and the test ibe
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+#here we aply on our data a linear model:logistic regression
 from sklearn.linear_model import LogisticRegression
 
 model = LogisticRegression(max_iter=200)
 model.fit(X_train, y_train)
 from sklearn.metrics import accuracy_score
 
+#we test the model on the data
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Acuratețea modelului: {accuracy}")
 
+#visual plot
 import matplotlib.pyplot as plt
 import seaborn as sns
 
