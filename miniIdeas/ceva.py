@@ -1,5 +1,7 @@
 import sys
 
+#we took arguments from the terminal and check if their sum is a prime number
+
 print(f"test cu {sys.argv[1:]}")
 #lista = list(int(sys.argv[1:]))
 lista = []

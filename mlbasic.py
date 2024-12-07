@@ -62,3 +62,5 @@ import seaborn as sns
 
 sns.pairplot(X.assign(Species=y.map({0: 'setosa', 1: 'versicolor', 2: 'virginica'})), hue='Species')
 plt.show()
+
+#all times you work with git pull commit push
