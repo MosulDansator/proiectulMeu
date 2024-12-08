@@ -152,7 +152,7 @@ base10toB(24,2)
 def baseBto10(nr,b):
     n = 0
     i = 0
-    while(nr):
+    while(nr):  
         n += nr%10 * b**i
         nr //= 10
         i += 1
